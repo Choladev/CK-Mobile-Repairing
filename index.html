@@ -226,6 +226,92 @@
             color: var(--gray);
             margin-bottom: 20px;
         }
+        /* Categories */
+        .categories {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .category-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-card p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .category-link {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .category-link i {
+            margin-left: 0.5rem;
+            transition: transform 0.3s;
+        }
+
+        .category-link:hover i {
+            transform: translateX(5px);
+        }
+        
         
         /* Why Choose Us */
         .why-us {
@@ -690,6 +776,52 @@
                     <p>Find genuine accessories, cases, screen protectors, and replacement parts at competitive prices.</p>
                     <a href="#" class="btn">Shop Now</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="section-title">
+            <h2>Our Product Categories</h2>
+            <p>Explore our wide range of premium products and services</p>
+        </div>
+        
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Smartphones</h3>
+                <p>Latest models from top brands with exclusive deals</p>
+                <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h3>Computers</h3>
+                <p>Laptops, desktops, and accessories for all needs</p>
+                <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <h3>Accessories</h3>
+                <p>Covers, chargers, headphones and more</p>
+                <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Repair Services</h3>
+                <p>Professional repair for all mobile devices</p>
+                <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
