@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charging Port Repair | CK Brands</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #f97316;
+            --accent: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f1f5f9;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary);
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: #ea580c;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 17px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(29, 78, 216, 0.8)), url('https://images.unsplash.com/photo-1585776245861-b35ba5f9a925?ixlib=rb-4.0.3') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        /* Service Info */
+        .service-info {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .service-image {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            height: 450px;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .service-details h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+        
+        .service-details p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: var(--gray);
+            line-height: 1.8;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .benefit {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .benefit i {
+            color: var(--accent);
+            font-size: 24px;
+            margin-top: 5px;
+        }
+        
+        .benefit-content h3 {
+            margin-bottom: 8px;
+        }
+        
+        /* Symptoms Section */
+        .symptoms {
+            padding: 80px 0;
+            background: var(--light);
+        }
+        
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .symptom {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .symptom:hover {
+            transform: translateY(-10px);
+        }
+        
+        .symptom i {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .symptom h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* Process Section */
+        .process {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .step:hover {
+            transform: translateY(-10px);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .step i {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .step h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* Brands Section */
+        .brands {
+            padding: 80px 0;
+            background: var(--light);
+        }
+        
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .brand {
+            background: white;
+            border-radius: 10px;
+            padding: 25px 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .brand:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .brand i {
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .brand h3 {
+            font-size: 1.2rem;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .pricing-card {
+            background: var(--light);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .pricing-card.popular::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--secondary);
+            color: white;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .pricing-header {
+            background: var(--primary);
+            color: white;
+            padding: 30px 20px;
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        
+        .pricing-body {
+            padding: 30px 20px;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .pricing-features li i {
+            color: var(--accent);
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: var(--light);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .client-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .client-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .stars {
+            color: gold;
+            margin: 5px 0 10px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 70px 0 0;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            text-align: center;
+            color: #94a3b8;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .service-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-image {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                background: white;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: transform 0.4s ease;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta h2 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .service-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo"><i class="fas fa-mobile-alt"></i>CK Brands</a>
+                <button class="mobile-menu-btn" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><i class="fas fa-phone-alt"></i> +260 97 123 4567</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Charging Port Repair</h1>
+            <p>Having trouble charging your device? We repair or replace faulty charging ports with precision and care.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn"><i class="fas fa-tools"></i> Book Repair Now</a>
+                <a href="tel:+260971234567" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call: +260 97 123 4567</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Info -->
+    <section class="service-info">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1585776245861-b35ba5f9a925?ixlib=rb-4.0.3" alt="Charging Port Repair">
+                </div>
+                <div class="service-details">
+                    <h2>Restore Your Device's Charging Ability</h2>
+                    <p>A faulty charging port can leave you stranded with a dead device. At CK Brands, we specialize in diagnosing and repairing charging port issues for all major smartphone brands.</p>
+                    <p>Our technicians use high-quality replacement parts and precision tools to repair or replace your charging port, ensuring your device charges reliably every time.</p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit">
+                            <i class="fas fa-bolt"></i>
+                            <div class="benefit-content">
+                                <h3>Fast Charging</h3>
+                                <p>Restore full charging speed to your device</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="benefit-content">
+                                <h3>6-Month Warranty</h3>
+                                <p>All repairs come with a warranty for your peace of mind</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-clock"></i>
+                            <div class="benefit-content">
+                                <h3>Quick Service</h3>
+                                <p>Most repairs completed in under 60 minutes</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-certificate"></i>
+                            <div class="benefit-content">
+                                <h3>Genuine Parts</h3>
+                                <p>We use only high-quality replacement parts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptoms Section -->
+    <section class="symptoms">
+        <div class="container">
+            <div class="text-center">
+                <h2>Signs You Need Charging Port Repair</h2>
+                <p>Watch for these common symptoms of a failing charging port</p>
+            </div>
+            <div class="symptoms-grid">
+                <div class="symptom">
+                    <i class="fas fa-plug"></i>
+                    <h3>Loose Connection</h3>
+                    <p>Charger falls out easily or only works at certain angles</p>
+                </div>
+                <div class="symptom">
+                    <i class="fas fa-battery-quarter"></i>
+                    <h3>Slow Charging</h3>
+                    <p>Device charges much slower than it used to</p>
+                </div>
+                <div class="symptom">
+                    <i class="fas fa-times-circle"></i>
+                    <h3>Not Charging</h3>
+                    <p>Device doesn't recognize charger at all</p>
+                </div>
+                <div class="symptom">
+                    <i class="fas fa-fire"></i>
+                    <h3>Overheating</h3>
+                    <p>Device gets unusually hot while charging</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="text-center">
+                <h2>Our Charging Port Repair Process</h2>
+                <p>Professional service to get your device charging properly again</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-search"></i>
+                    <h3>Diagnosis</h3>
+                    <p>We test your device to confirm the charging port issue</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-tools"></i>
+                    <h3>Repair/Replace</h3>
+                    <p>We clean or replace the charging port as needed</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-bolt"></i>
+                    <h3>Testing</h3>
+                    <p>We verify proper charging function and speed</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Quality Check</h3>
+                    <p>Full device inspection to ensure everything works</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands">
+        <div class="container">
+            <div class="text-center">
+                <h2>We Repair All Major Brands</h2>
+                <p>Our expert technicians are trained to work with devices from all leading manufacturers</p>
+            </div>
+            <div class="brands-grid">
+                <div class="brand">
+                    <i class="fab fa-apple"></i>
+                    <h3>iPhone</h3>
+                </div>
+                <div class="brand">
+                    <i class="fab fa-android"></i>
+                    <h3>Samsung</h3>
+                </div>
+                <div class="brand">
+                    <i class="fab fa-android"></i>
+                    <h3>Huawei</h3>
+                </div>
+                <div class="brand">
+                    <i class="fab fa-android"></i>
+                    <h3>Xiaomi</h3>
+                </div>
+                <div class="brand">
+                    <i class="fab fa-android"></i>
+                    <h3>Oppo</h3>
+                </div>
+                <div class="brand">
+                    <i class="fab fa-android"></i>
+                    <h3>Google Pixel</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="text-center">
+                <h2>Transparent Pricing</h2>
+                <p>Affordable charging port repair with no hidden fees</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Standard Repair</h3>
+                        <div class="price">K 150 <span>starting from</span></div>
+                        <p>Cleaning & Minor Repairs</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> Port cleaning & realignment</li>
+                            <li><i class="fas fa-check-circle"></i> 30-45 minute service</li>
+                            <li><i class="fas fa-check-circle"></i> 6-Month Warranty</li>
+                            <li><i class="fas fa-check-circle"></i> Free diagnostic</li>
+                        </ul>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="pricing-header">
+                        <h3>Full Replacement</h3>
+                        <div class="price">K 250 <span>starting from</span></div>
+                        <p>Most Android Devices</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> New charging port installed</li>
+                            <li><i class="fas fa-check-circle"></i> 45-60 minute service</li>
+                            <li><i class="fas fa-check-circle"></i> 6-Month Warranty</li>
+                            <li><i class="fas fa-check-circle"></i> Water-resistance seal</li>
+                        </ul>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium Devices</h3>
+                        <div class="price">K 350 <span>starting from</span></div>
+                        <p>iPhone & Flagship Models</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> OEM-quality replacement</li>
+                            <li><i class="fas fa-check-circle"></i> 1-2 hour service</li>
+                            <li><i class="fas fa-check-circle"></i> 6-Month Warranty</li>
+                            <li><i class="fas fa-check-circle"></i> Full functionality test</li>
+                        </ul>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="text-center">
+                <h2>What Our Customers Say</h2>
+                <p>Hear from satisfied customers who have restored their charging capability</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David K.">
+                        </div>
+                        <div>
+                            <h3>David K.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"My Samsung wouldn't charge unless I held the cable at a specific angle. CK Brands fixed the charging port in under an hour and now it works perfectly. Very professional service!"</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/women/54.jpg" alt="Grace M.">
+                        </div>
+                        <div>
+                            <h3>Grace M.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"I thought I needed a new phone because mine wouldn't charge. CK Brands replaced the charging port for a fraction of the cost of a new device. So glad I found them!"</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Thomas B.">
+                        </div>
+                        <div>
+                            <h3>Thomas B.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Quick and affordable service. My iPhone charges like new again. The technician explained everything clearly and even gave me tips to prevent future port damage."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Need Your Device Charging Again?</h2>
+            <p>Contact us today for fast, professional charging port repair service</p>
+            <div class="hero-btns">
+                <a href="tel:+260971234567" class="btn"><i class="fas fa-phone-alt"></i> Call Now: +260 97 123 4567</a>
+                <a href="#" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>CK Brands</h3>
+                    <p>Your trusted partner for mobile phone repairs in Zambia. We provide fast, reliable, and affordable repair services using genuine parts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Screen Replacement</a></li>
+                        <li><a href="#">Battery Replacement</a></li>
+                        <li><a href="#">Charging Port Repair</a></li>
+                        <li><a href="#">Water Damage Repair</a></li>
+                        <li><a href="#">Software Issues</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Independence Ave, Lusaka</li>
+                        <li><i class="fas fa-phone-alt"></i> +260 97 123 4567</li>
+                        <li><i class="fab fa-whatsapp"></i> +260 97 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@ckbrands.co.zm</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 CK Brands. All Rights Reserved. | Professional Charging Port Repair Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animation for process steps
+        const steps = document.querySelectorAll('.step');
+        steps.forEach(step => {
+            step.addEventListener('mouseenter', () => {
+                step.style.transform = 'translateY(-10px)';
+            });
+            step.addEventListener('mouseleave', () => {
+                step.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
