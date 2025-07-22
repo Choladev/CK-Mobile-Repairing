@@ -7,14 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        <!-- Preloader -->
-<div id="preloader">
-    <div class="loader">
-        <div class="loader-inner"></div>
-        <div class="loader-inner"></div>
-        <div class="loader-inner"></div>
-    </div>
-</div>
+        
         :root {
             --primary: #2563eb;
             --primary-dark: #1d4ed8;
@@ -646,7 +639,7 @@
     </style>
 </head>
 <body>
-    <!-- Preloader -->
+ <!-- Preloader -->
 <div id="preloader">
     <div class="loader">
         <div class="loader-inner"></div>
@@ -997,6 +990,16 @@
     </footer>
 
     <script>
+    // Preloader
+    window.addEventListener('load', function() {
+        const preloader = document.getElementById('preloader');
+        setTimeout(function() {
+            preloader.style.opacity = '0';
+            setTimeout(function() {
+                preloader.style.display = 'none';
+            }, 500);
+        }, 1000);
+    });
         // Mobile Menu Toggle
         const menuBtn = document.getElementById('menuBtn');
         const navLinks = document.getElementById('navLinks');
