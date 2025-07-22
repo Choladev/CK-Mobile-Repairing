@@ -639,14 +639,7 @@
     </style>
 </head>
 <body>
- <!-- Preloader -->
-<div id="preloader">
-    <div class="loader">
-        <div class="loader-inner"></div>
-        <div class="loader-inner"></div>
-        <div class="loader-inner"></div>
-    </div>
-</div>
+ 
     <!-- Header & Navigation -->
     <header>
         <div class="container">
@@ -990,16 +983,6 @@
     </footer>
 
     <script>
-    // Preloader
-    window.addEventListener('load', function() {
-        const preloader = document.getElementById('preloader');
-        setTimeout(function() {
-            preloader.style.opacity = '0';
-            setTimeout(function() {
-                preloader.style.display = 'none';
-            }, 500);
-        }, 1000);
-    });
         // Mobile Menu Toggle
         const menuBtn = document.getElementById('menuBtn');
         const navLinks = document.getElementById('navLinks');
