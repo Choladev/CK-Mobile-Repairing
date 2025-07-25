@@ -219,26 +219,62 @@
         }
         
         /* Services Section */
-        .section {
-            padding: 100px 0;
+                .about {
+            background: white;
         }
         
-        .section-title {
-            text-align: center;
-            margin-bottom: 70px;
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
         }
         
-        .section-title h2 {
+        .about-image {
+            flex: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h2 {
             font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         
-        .section-title p {
+        .about-text p {
+            margin-bottom: 20px;
             color: var(--gray);
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.1rem;
+        }
+        
+        .qualifications {
+            margin: 30px 0;
+        }
+        
+        .qualifications li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .qualifications i {
+            color: var(--success);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        /* Services Section */
+        .services {
+            background: linear-gradient(to bottom, #eff6ff 0%, #dbeafe 100%);
         }
         
         .services-grid {
@@ -251,33 +287,50 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-            text-align: center;
-            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
         }
         
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
         
         .service-icon {
-            font-size: 50px;
-            color: var(--primary);
-            margin-bottom: 20px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            font-size: 2.5rem;
         }
         
-        .service-card h3 {
+        .service-content {
+            padding: 30px;
+        }
+        
+        .service-content h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
         }
         
-        .service-card p {
-            color: var(--gray);
-            margin-bottom: 20px;
+        .service-content ul {
+            list-style: none;
+            margin-top: 20px;
         }
         
+        .service-content ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .service-content ul li i {
+            color: var(--success);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
         
         /* Why Choose Us */
         .why-us {
@@ -306,13 +359,7 @@
         .feature i {
             font-size: 40px;
             color: var(--primary);
-            margin-bottom: 20px;
-        }
-        
-        .feature h3 {
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
+
         
         /* Testimonials */
         .testimonials-slider {
@@ -695,60 +742,102 @@
     </section>
 
     <!-- Services Section -->
-    <section class="section" id="services">
+     <section class="about" id="about">
         <div class="container">
             <div class="section-title">
-                <h2>Our Repair Services</h2>
-                <p>We provide comprehensive repair services for all major smartphone brands with fast turnaround times and quality parts.</p>
+                <h2>About Us</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600" alt="Chola Kachamba - Mobile Repair Expert">
+                </div>
+                <div class="about-text">
+                    <h2>Chola Kachamba</h2>
+                    <p>Certified Mobile Repair Specialist with expertise in both hardware and software solutions for all major smartphone brands.</p>
+                    
+                    <h3>Professional Qualifications</h3>
+                    <ul class="qualifications">
+                        <li>
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <strong>Hardware Cell Phone Mobile Repair & Microsoldering</strong>
+                                <p>Advanced training in component-level repairs including microsoldering techniques</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <strong>Software Mobile Cell Phone Repair Mastery: Android & iPhone</strong>
+                                <p>Expertise in OS troubleshooting, software flashing, and data recovery</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <p>Based in Zambia, I bring professional repair services with a focus on quality, reliability, and customer satisfaction. Your device is in expert hands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-microchip"></i>
                     </div>
-                    <h3>Screen Replacement</h3>
-                    <p>Cracked or broken screens? We replace them quickly with high-quality, OEM-grade displays.</p>
-                    <a href="screen.html" class="btn">Learn More</a>
+                    <div class="service-content">
+                        <h3>Hardware Repairs</h3>
+                        <p>Comprehensive hardware solutions for all mobile devices:</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Screen Replacement</li>
+                            <li><i class="fas fa-check-circle"></i> Battery Replacement</li>
+                            <li><i class="fas fa-check-circle"></i> Charging Port Repair</li>
+                            <li><i class="fas fa-check-circle"></i> Microsoldering & Board Repair</li>
+                            <li><i class="fas fa-check-circle"></i> Camera & Speaker Repair</li>
+                            <li><i class="fas fa-check-circle"></i> Water Damage Restoration</li>
+                        </ul>
+                    </div>
                 </div>
+                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-battery-full"></i>
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h3>Battery Replacement</h3>
-                    <p>Extend your phone's life with our genuine battery replacements. Say goodbye to poor battery life.</p>
-                    <a href="battery.html" class="btn">Learn More</a>
+                    <div class="service-content">
+                        <h3>Software Solutions</h3>
+                        <p>Advanced software troubleshooting and repair:</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> OS Repair & Flashing</li>
+                            <li><i class="fas fa-check-circle"></i> Virus & Malware Removal</li>
+                            <li><i class="fas fa-check-circle"></i> Data Recovery & Backup</li>
+                            <li><i class="fas fa-check-circle"></i> Unlocking & Jailbreaking</li>
+                            <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Software Updates</li>
+                        </ul>
+                    </div>
                 </div>
+                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Charging Port Fix</h3>
-                    <p>Having trouble charging your device? We repair or replace faulty charging ports.</p>
-                    <a href="charging.html" class="btn">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-lock"></i>
+                    <div class="service-content">
+                        <h3>Additional Services</h3>
+                        <p>Complete mobile device solutions:</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Diagnostic Services</li>
+                            <li><i class="fas fa-check-circle"></i> Device Unlocking</li>
+                            <li><i class="fas fa-check-circle"></i> Accessory Sales</li>
+                            <li><i class="fas fa-check-circle"></i> Device Protection</li>
+                            <li><i class="fas fa-check-circle"></i> Warranty Services</li>
+                            <li><i class="fas fa-check-circle"></i> Consultations</li>
+                        </ul>
                     </div>
-                    <h3>Software Unlocking</h3>
-                    <p>Unlock your phone from any network carrier or fix software issues with our expert technicians.</p>
-                    <a href="Software.html" class="btn">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-water"></i>
-                    </div>
-                    <h3>Water Damage Repair</h3>
-                    <p>Accidentally dropped your phone in water? We can rescue water-damaged devices.</p>
-                    <a href="water.html" class="btn">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-headphones"></i>
-                    </div>
-                    <h3>Mobile Phones And Accessories & Parts</h3>
-                    <p>Find genuine mobile phones,accessories, screen protectors, and replacement parts at competitive prices.</p>
-                    <a href="accessories.html" class="btn">Shop Now</a>
                 </div>
             </div>
         </div>
